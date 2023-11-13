@@ -1,0 +1,56 @@
+---
+- name: Install and configure Docker on Debian
+  hosts: 35.202.135.32
+  become: yes
+
+  tasks:
+    - name: Update APT package cache
+      apt:
+        update_cache: yes
+
+    - name: Install dependencies
+      apt:
+        name: "{{ packages }}"
+        state: present
+      vars:
+        packages:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+
+    - name: Add Docker GPG key
+      apt_key:
+        url: https://download.docker.com/linux/debian/gpg
+        state: present
+
+    - name: Add Docker APT repository
+      apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/debian {{ ansible_distribution_release }} stable
+        state: present
+
+    - name: Install Docker
+      apt:
+        name: docker-ce
+        state: present
+
+    - name: Install Docker Compose
+      command: >
+        curl -L "https://github.com/docker/compose/releases/tag/1.29.2/docker-compose-Linux-x86_64" -o /usr/local/bin/docker-compose
+      args:
+        creates: /usr/local/bin/docker-compose
+      become_method: sudo
+      become_user: root
+      register: compose_install_result
+
+    - name: Make Docker Compose executable
+      command: chmod +x /usr/local/bin/docker-compose
+      when: compose_install_result is success
+      become_method: sudo
+      become_user: root
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
