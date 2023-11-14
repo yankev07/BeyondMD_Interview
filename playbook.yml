@@ -1,7 +1,7 @@
 ---
 - name: Install and configure Docker on Debian
-  hosts: 35.202.135.32
-  become: yes
+  hosts: 34.171.221.7
+  become: true
 
   tasks:
     - name: Update APT package cache
