@@ -6,3 +6,7 @@
 - Write a script that collects and reports various system health information, such as CPU, memory, disk usage, active users, and/or running processes for a debian server.
 - Create an idempotent Ansible playbook that automates the installation and configuration of Docker on a Debian bookworm host, ensuring it correctly handles repeated executions without unnecessary changes to the system state. Bonus points if you use vagrant as a local testing environment for your ansible playbook. I personally really like the "debian-sandbox/bookworm64" vagrant image.
 
+## Step 1
+
+Wrote a sample HTML5/CSS3 script which displays the message "Hello BeyondMD!" as pictured below
+
