@@ -43,6 +43,13 @@ By writing a short bash script, we can output various system health information 
 
 The installation of Docker can be automated on a Debian bookworm server using a ansible playbook. The playbook contains step-by-step commands and parameters detailing each step of the installation of Docker on Debian OS
 We can test our playbook by using the "ansible-playbook" command.
+
 In our case, the remote server was secured using a private key for ssh connections, so we had to include an extra "--private-key" parameter in the command as pictured below:
 
 ![Img 6](https://github.com/yankev07/BeyondMD_Interview/blob/4b69387952d1879cba167becd9c2435466d0c044/img/Screenshot%202023-11-14%20at%201.09.22%20AM.png)
+
+We can check that docker was successfully installed on the remote server by manually ssh-ing and testing the command "docker --version"
+
+
+## Step 4
+
