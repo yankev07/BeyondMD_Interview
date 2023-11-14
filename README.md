@@ -53,3 +53,8 @@ We can check that docker was successfully installed on the remote server by manu
 
 ## Step 4
 
+We can use vagrant to provision a local Debian bookworm environment for the ansible playbook. For that, we need to write a Vagrant script which specifies details about the desired VM box as well as referrencing our previously written ansible playbook.
+
+After everything looks good with the Vagrant script, we can now run the "vagrant run" and "vagrant ssh" commands to create and provision the vagrant VM as shown below:
+
+![Img 7](https://github.com/yankev07/BeyondMD_Interview/blob/f82596466dd1d44687c24877777d2db49f4f7a19/img/Screenshot%202023-11-14%20at%201.14.39%20AM.png)
