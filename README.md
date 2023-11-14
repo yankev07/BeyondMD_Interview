@@ -21,3 +21,6 @@ Note: Our port 8080 was already busy during this exercise, so we used the port 3
 Once everything looks good, we build our docker image using the command below:
 
 ![Img 2](https://github.com/yankev07/BeyondMD_Interview/blob/6d76d3c8d25ec39441e8479d95a150657897396f/img/Screenshot%202023-11-14%20at%2012.30.40%20AM.png)
+
+We then run the docker container using docker-compose
+
