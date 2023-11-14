@@ -45,3 +45,4 @@ The installation of Docker can be automated on a Debian bookworm server using a 
 We can test our playbook by using the "ansible-playbook" command.
 In our case, the remote server was secured using a private key for ssh connections, so we had to include an extra "--private-key" parameter in the command as pictured below:
 
+![Img 6](https://github.com/yankev07/BeyondMD_Interview/blob/4b69387952d1879cba167becd9c2435466d0c044/img/Screenshot%202023-11-14%20at%201.09.22%20AM.png)
