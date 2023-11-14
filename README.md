@@ -26,3 +26,4 @@ We then run the generated docker image
 
 ![Img 3](https://github.com/yankev07/BeyondMD_Interview/blob/1d575920c552771a34f60020d22243a367922d66/img/Screenshot%202023-11-14%20at%2012.31.06%20AM.png)
 
+Now we can check at http://localhost:3000/ and see the webpage live from the browser window
