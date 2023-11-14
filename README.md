@@ -11,3 +11,9 @@
 Wrote a sample HTML5/CSS3 script which displays the message "Hello BeyondMD!" as pictured below
 
 ![Img 1](https://github.com/yankev07/BeyondMD_Interview/blob/7909def7a3dfd6cf203f9c3742fa35d68a66b8e3/img/Screenshot%202023-11-14%20at%201.35.03%20AM.png)
+
+After writing the HTML script and testing locally that the output is correct, the next step is to containerize our simple webpage
+For that, we write a Dockerfile which pulls the official image of https from docker hub
+We cna also use a docker-compose.yml file which will specify the ports mapping
+
+Note: Our port 8080 was already busy during this exercise, so we used the port 3000 instead (Subtle ReactJS reference here!)
