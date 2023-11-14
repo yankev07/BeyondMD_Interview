@@ -4,7 +4,8 @@
 
 - Make a simple page using HTML, CSS, and/or javascript that displays “Hello BeyondMD!“, and then dockerize it. It must run using docker compose.
 - Write a script that collects and reports various system health information, such as CPU, memory, disk usage, active users, and/or running processes for a debian server.
-- Create an idempotent Ansible playbook that automates the installation and configuration of Docker on a Debian bookworm host, ensuring it correctly handles repeated executions without unnecessary changes to the system state. Bonus points if you use vagrant as a local testing environment for your ansible playbook. I personally really like the "debian-sandbox/bookworm64" vagrant image.
+- Create an idempotent Ansible playbook that automates the installation and configuration of Docker on a Debian bookworm host, ensuring it correctly handles repeated executions without unnecessary changes to the system state.
+- Bonus points if you use vagrant as a local testing environment for your ansible playbook. I personally really like the "debian-sandbox/bookworm64" vagrant image.
 
 ## Step 1
 
@@ -36,3 +37,11 @@ Now we can check at http://localhost:3000/ and see the webpage live from the bro
 By writing a short bash script, we can output various system health information from a Debian bookworm server as pictured below:
 
 ![Img 5](https://github.com/yankev07/BeyondMD_Interview/blob/cc8268539783a313663e8d1c441e69b4501ba63a/img/Screenshot%202023-11-14%20at%2012.55.47%20AM.png)
+
+
+## Step 3
+
+The installation of Docker can be automated on a Debian bookworm server using a ansible playbook. The playbook contains step-by-step commands and parameters detailing each step of the installation of Docker on Debian OS
+We can test our playbook by using the "ansible-playbook" command.
+In our case, the remote server was secured using a private key for ssh connections, so we had to include an extra "--private-key" parameter in the command as pictured below:
+
