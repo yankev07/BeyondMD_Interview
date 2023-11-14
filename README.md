@@ -10,4 +10,4 @@
 
 Wrote a sample HTML5/CSS3 script which displays the message "Hello BeyondMD!" as pictured below
 
-![Img 1]([https://github.com/tograh/testrepository/3DTest.png](https://github.com/yankev07/BeyondMD_Interview/blob/main/img/Screenshot%202023-11-14%20at%201.35.03%20AM.png)https://github.com/yankev07/BeyondMD_Interview/blob/main/img/Screenshot%202023-11-14%20at%201.35.03%20AM.png)
+![Img 1](https://github.com/yankev07/BeyondMD_Interview/blob/7909def7a3dfd6cf203f9c3742fa35d68a66b8e3/img/Screenshot%202023-11-14%20at%201.35.03%20AM.png)
