@@ -35,3 +35,4 @@ Now we can check at http://localhost:3000/ and see the webpage live from the bro
 
 By writing a short bash script, we can output various system health information from a Debian bookworm server as pictured below:
 
+![Img 5](https://github.com/yankev07/BeyondMD_Interview/blob/cc8268539783a313663e8d1c441e69b4501ba63a/img/Screenshot%202023-11-14%20at%2012.55.47%20AM.png)
