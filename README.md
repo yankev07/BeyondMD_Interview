@@ -29,3 +29,9 @@ We then run the generated docker image
 Now we can check at http://localhost:3000/ and see the webpage live from the browser window
 
 ![Img 4](https://github.com/yankev07/BeyondMD_Interview/blob/52c2269c90fcdaa14404ba9c153192f2b28ccb41/img/Screenshot%202023-11-13%20at%209.20.55%20PM.png)
+
+
+## Step 2
+
+By writing a short bash script, we can output various system health information from a Debian bookworm server as pictured below:
+
