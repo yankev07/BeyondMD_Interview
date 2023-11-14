@@ -17,3 +17,5 @@ For that, we write a Dockerfile which pulls the official image of https from doc
 We cna also use a docker-compose.yml file which will specify the ports mapping
 
 Note: Our port 8080 was already busy during this exercise, so we used the port 3000 instead (Subtle ReactJS reference here!)
+
+Once everything looks good, we build our docker image using the command below:
